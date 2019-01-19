@@ -12,6 +12,7 @@
 		AF1BC0E921F209D5009F0B4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF1BC0E721F209D5009F0B4B /* Main.storyboard */; };
 		AF1BC0EB21F209D6009F0B4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF1BC0EA21F209D6009F0B4B /* Assets.xcassets */; };
 		AF1BC0EE21F209D6009F0B4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF1BC0EC21F209D6009F0B4B /* LaunchScreen.storyboard */; };
+		AF6FF72221F3768500D55A51 /* ArrayDecodeSkippingFailedItemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6FF72121F3768500D55A51 /* ArrayDecodeSkippingFailedItemsTests.swift */; };
 		DEEB518B035A55125ECE32ED /* Pods_swift_codable_poc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E92601921352F6754F7E359 /* Pods_swift_codable_poc.framework */; };
 		EAA67EC146C1A152E0318029 /* Pods_swift_codable_pocTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 129F06B97FF6CF377AB638D6 /* Pods_swift_codable_pocTests.framework */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,8 @@
 		AF1BC0EF21F209D6009F0B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF1BC0F421F209D6009F0B4B /* swift-codable-pocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-codable-pocTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1BC0FA21F209D6009F0B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF6FF72021F3768500D55A51 /* swift-codable-pocTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift-codable-pocTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		AF6FF72121F3768500D55A51 /* ArrayDecodeSkippingFailedItemsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDecodeSkippingFailedItemsTests.swift; sourceTree = "<group>"; };
 		C6F24D29B1C78226D9C88039 /* Pods-swift-codable-poc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-codable-poc.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift-codable-poc/Pods-swift-codable-poc.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				AF1BC0FA21F209D6009F0B4B /* Info.plist */,
+				AF6FF72121F3768500D55A51 /* ArrayDecodeSkippingFailedItemsTests.swift */,
+				AF6FF72021F3768500D55A51 /* swift-codable-pocTests-Bridging-Header.h */,
 			);
 			path = "swift-codable-pocTests";
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 					};
 					AF1BC0F321F209D6009F0B4B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = AF1BC0DF21F209D5009F0B4B;
 					};
 				};
@@ -342,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF6FF72221F3768500D55A51 /* ArrayDecodeSkippingFailedItemsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +544,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U3NM976654;
 				INFOPLIST_FILE = "swift-codable-pocTests/Info.plist";
@@ -547,6 +555,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.travelbank.poc.swift-codable-pocTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-codable-pocTests/swift-codable-pocTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-codable-poc.app/swift-codable-poc";
@@ -559,6 +569,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U3NM976654;
 				INFOPLIST_FILE = "swift-codable-pocTests/Info.plist";
@@ -569,6 +580,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.travelbank.poc.swift-codable-pocTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-codable-pocTests/swift-codable-pocTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-codable-poc.app/swift-codable-poc";
