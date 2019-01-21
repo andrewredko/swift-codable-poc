@@ -9,6 +9,9 @@
 import Foundation
 import XCTest
 
+// Decoding an array fails if single element decoding fails. Here is a
+// suggested workaround for this, with using `FailableCodableArray` which
+// skips failed elemets.
 //per https://stackoverflow.com/a/46369152
 //and https://bugs.swift.org/browse/SR-5953
 class ArrayDecodeSkippingFailedItemsTests: XCTestCase {

@@ -12,7 +12,17 @@
 		AF1BC0E921F209D5009F0B4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF1BC0E721F209D5009F0B4B /* Main.storyboard */; };
 		AF1BC0EB21F209D6009F0B4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF1BC0EA21F209D6009F0B4B /* Assets.xcassets */; };
 		AF1BC0EE21F209D6009F0B4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF1BC0EC21F209D6009F0B4B /* LaunchScreen.storyboard */; };
+		AF6AB50D21F44B1900FAD733 /* SetDefautForSkippingFailedValuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6AB50C21F44B1900FAD733 /* SetDefautForSkippingFailedValuesTests.swift */; };
+		AF6AB51021F44E9700FAD733 /* KeyedDecodingContainer+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6AB50F21F44E9700FAD733 /* KeyedDecodingContainer+Helpers.swift */; };
+		AF6AB51221F4702000FAD733 /* SynthesizedInitDecoderDoesNotOverrideDefaultLetValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6AB51121F4702000FAD733 /* SynthesizedInitDecoderDoesNotOverrideDefaultLetValueTests.swift */; };
+		AF6AB51421F480E900FAD733 /* OmitExplicitDecodingAtLevel2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6AB51321F480E900FAD733 /* OmitExplicitDecodingAtLevel2Tests.swift */; };
+		AF6AB51621F487FF00FAD733 /* CannotExplicitlyDecodeOnlySomePropertiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6AB51521F487FF00FAD733 /* CannotExplicitlyDecodeOnlySomePropertiesTests.swift */; };
 		AF6FF72221F3768500D55A51 /* ArrayDecodeSkippingFailedItemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6FF72121F3768500D55A51 /* ArrayDecodeSkippingFailedItemsTests.swift */; };
+		AF73C70F21F5FED700B38B76 /* DecodeDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF73C70E21F5FED700B38B76 /* DecodeDictionaryTests.swift */; };
+		AF73C71121F6012000B38B76 /* DecodeDictionaryWithEnumKeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF73C71021F6012000B38B76 /* DecodeDictionaryWithEnumKeysTests.swift */; };
+		AF73C71321F6247300B38B76 /* DecodeRealmObjectWithListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF73C71221F6247300B38B76 /* DecodeRealmObjectWithListTests.swift */; };
+		AF73C71521F64B0200B38B76 /* CanDecodeFromDataTypeOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8FE8C921F5000A0018E167 /* CanDecodeFromDataTypeOnly.swift */; };
+		AF8FE8CC21F538DE0018E167 /* PassingDataToChildDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8FE8CB21F538DE0018E167 /* PassingDataToChildDecoderTests.swift */; };
 		DEEB518B035A55125ECE32ED /* Pods_swift_codable_poc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E92601921352F6754F7E359 /* Pods_swift_codable_poc.framework */; };
 		EAA67EC146C1A152E0318029 /* Pods_swift_codable_pocTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 129F06B97FF6CF377AB638D6 /* Pods_swift_codable_pocTests.framework */; };
 /* End PBXBuildFile section */
@@ -42,8 +52,18 @@
 		AF1BC0EF21F209D6009F0B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF1BC0F421F209D6009F0B4B /* swift-codable-pocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-codable-pocTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1BC0FA21F209D6009F0B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF6AB50C21F44B1900FAD733 /* SetDefautForSkippingFailedValuesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDefautForSkippingFailedValuesTests.swift; sourceTree = "<group>"; };
+		AF6AB50F21F44E9700FAD733 /* KeyedDecodingContainer+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+Helpers.swift"; sourceTree = "<group>"; };
+		AF6AB51121F4702000FAD733 /* SynthesizedInitDecoderDoesNotOverrideDefaultLetValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynthesizedInitDecoderDoesNotOverrideDefaultLetValueTests.swift; sourceTree = "<group>"; };
+		AF6AB51321F480E900FAD733 /* OmitExplicitDecodingAtLevel2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmitExplicitDecodingAtLevel2Tests.swift; sourceTree = "<group>"; };
+		AF6AB51521F487FF00FAD733 /* CannotExplicitlyDecodeOnlySomePropertiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CannotExplicitlyDecodeOnlySomePropertiesTests.swift; sourceTree = "<group>"; };
 		AF6FF72021F3768500D55A51 /* swift-codable-pocTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift-codable-pocTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		AF6FF72121F3768500D55A51 /* ArrayDecodeSkippingFailedItemsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDecodeSkippingFailedItemsTests.swift; sourceTree = "<group>"; };
+		AF73C70E21F5FED700B38B76 /* DecodeDictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeDictionaryTests.swift; sourceTree = "<group>"; };
+		AF73C71021F6012000B38B76 /* DecodeDictionaryWithEnumKeysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeDictionaryWithEnumKeysTests.swift; sourceTree = "<group>"; };
+		AF73C71221F6247300B38B76 /* DecodeRealmObjectWithListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeRealmObjectWithListTests.swift; sourceTree = "<group>"; };
+		AF8FE8C921F5000A0018E167 /* CanDecodeFromDataTypeOnly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanDecodeFromDataTypeOnly.swift; sourceTree = "<group>"; };
+		AF8FE8CB21F538DE0018E167 /* PassingDataToChildDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassingDataToChildDecoderTests.swift; sourceTree = "<group>"; };
 		C6F24D29B1C78226D9C88039 /* Pods-swift-codable-poc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-codable-poc.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift-codable-poc/Pods-swift-codable-poc.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,11 +132,29 @@
 		AF1BC0F721F209D6009F0B4B /* swift-codable-pocTests */ = {
 			isa = PBXGroup;
 			children = (
-				AF1BC0FA21F209D6009F0B4B /* Info.plist */,
+				AF6AB50E21F44E6100FAD733 /* Extensions */,
+				AF6AB51521F487FF00FAD733 /* CannotExplicitlyDecodeOnlySomePropertiesTests.swift */,
+				AF6AB50C21F44B1900FAD733 /* SetDefautForSkippingFailedValuesTests.swift */,
 				AF6FF72121F3768500D55A51 /* ArrayDecodeSkippingFailedItemsTests.swift */,
+				AF8FE8C921F5000A0018E167 /* CanDecodeFromDataTypeOnly.swift */,
+				AF8FE8CB21F538DE0018E167 /* PassingDataToChildDecoderTests.swift */,
+				AF73C70E21F5FED700B38B76 /* DecodeDictionaryTests.swift */,
+				AF73C71021F6012000B38B76 /* DecodeDictionaryWithEnumKeysTests.swift */,
+				AF73C71221F6247300B38B76 /* DecodeRealmObjectWithListTests.swift */,
+				AF6AB51321F480E900FAD733 /* OmitExplicitDecodingAtLevel2Tests.swift */,
+				AF6AB51121F4702000FAD733 /* SynthesizedInitDecoderDoesNotOverrideDefaultLetValueTests.swift */,
 				AF6FF72021F3768500D55A51 /* swift-codable-pocTests-Bridging-Header.h */,
+				AF1BC0FA21F209D6009F0B4B /* Info.plist */,
 			);
 			path = "swift-codable-pocTests";
+			sourceTree = "<group>";
+		};
+		AF6AB50E21F44E6100FAD733 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AF6AB50F21F44E9700FAD733 /* KeyedDecodingContainer+Helpers.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D75E9F80D1955E12309A6668 /* Pods */ = {
@@ -339,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF6AB51021F44E9700FAD733 /* KeyedDecodingContainer+Helpers.swift in Sources */,
 				AF1BC0E621F209D5009F0B4B /* ViewController.swift in Sources */,
 				AF1BC0E421F209D5009F0B4B /* AppDelegate.swift in Sources */,
 			);
@@ -348,7 +387,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF73C71121F6012000B38B76 /* DecodeDictionaryWithEnumKeysTests.swift in Sources */,
 				AF6FF72221F3768500D55A51 /* ArrayDecodeSkippingFailedItemsTests.swift in Sources */,
+				AF73C71321F6247300B38B76 /* DecodeRealmObjectWithListTests.swift in Sources */,
+				AF6AB51221F4702000FAD733 /* SynthesizedInitDecoderDoesNotOverrideDefaultLetValueTests.swift in Sources */,
+				AF6AB51621F487FF00FAD733 /* CannotExplicitlyDecodeOnlySomePropertiesTests.swift in Sources */,
+				AF73C70F21F5FED700B38B76 /* DecodeDictionaryTests.swift in Sources */,
+				AF73C71521F64B0200B38B76 /* CanDecodeFromDataTypeOnly.swift in Sources */,
+				AF6AB51421F480E900FAD733 /* OmitExplicitDecodingAtLevel2Tests.swift in Sources */,
+				AF6AB50D21F44B1900FAD733 /* SetDefautForSkippingFailedValuesTests.swift in Sources */,
+				AF8FE8CC21F538DE0018E167 /* PassingDataToChildDecoderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
